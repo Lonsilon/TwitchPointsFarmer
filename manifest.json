@@ -10,24 +10,11 @@
 
   "description": "Recolector de puntos de Twitch.",
 
-  "options_ui": {
-    "page": "options.html",
-    "browser_style": true
-  },
-
-  "permissions": ["storage"],
-
   "content_scripts": [
     {
       "matches": ["*://*.twitch.tv/*"],
       "js": ["twitchpointsfarmer.js"]
     }
-  ],
-
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "twitchpointsfarmer@mozilla.org"
-    }
-  }
+  ]
 
 }
